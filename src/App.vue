@@ -15,11 +15,31 @@ export default {
   },
   data (){ 
     return {
-    dataList: [1,2,3]
-  }
+    dataList: [1,2,3], // fake data for the example
+    parkingSlots: [],
+    apiUrl: 'http://localhost:41911/api/Parkings'
+    }
+  },
+  methods: {
+    getAllParkingSlots: function () {
+      axios.get(this.apiUrl)
+      .then(response=>{
+        console.log(response.status)
+        this.parkingSlots = response.data
+        console.log(this.parkingSlots)
+      })
+      .catch(function(error){
+        console.log(error)
+      })
+    }
+  }, 
+  created () {
+    // is called when this component is created
+    this.getAllParkingSlots()
+  }  
     
   }
-}
+
 </script>
 
 <style>
