@@ -24,19 +24,24 @@
 </nav>
   
   <availability :parkingSlots="this.parkingSlots"/>
+
+<div class="row justify-content-center">
+    <parkingmap :parkingSlots="parkingSlots"/>
+  </div>
+  <!-- <parkingmap :parkingSlots="parkingSlots"/> -->
+
   
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import mymap from './components/Map.vue'
+import parkingmap from './components/Map.vue'
 import availability from './components/Availability.vue'
 import weather from './components/Weather.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld, mymap, availability, weather
+    parkingmap, availability, weather
   },
   data (){ 
     return {
