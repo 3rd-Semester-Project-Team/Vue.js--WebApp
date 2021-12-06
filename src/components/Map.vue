@@ -1,6 +1,11 @@
 <template>
     <div class="main-container">	
    
+   <div class="arrows">
+	   <i style="font-size: 2.5rem;" class="bi bi-arrow-down"></i>
+		   <i style="font-size: 2.5rem;"  class="bi bi-arrow-up"></i>
+	</div>
+
     <!-- Top right -->
 		<canvas class="slot" id="1" width="40" height="70" style="top: 5px; right: 5px;"></canvas>
     		<canvas class="slot" id="2" width="40" height="70" style="top: 5px; right: 47px;"></canvas>
@@ -67,30 +72,38 @@
   
 
     <!-- Bottom row -->
-	<canvas id="42" class="slot" width="40" height="70" style="top: 370px; right: 5px;"></canvas>
-	<canvas id="41" class="slot" width="40" height="70" style="top: 370px; right: 47px;"></canvas>
- 	<canvas id="40" class="slot" width="40" height="70" style="top: 370px; right: 89px;"></canvas> 
-	<canvas id="39" class="slot" width="40" height="70" style="top: 370px; right: 131px;"></canvas> 
-	<canvas id="38" class="slot" width="40" height="70" style="top: 370px; right: 173px;"></canvas> 
-	<canvas id="37" class="slot" width="40" height="70" style="top: 370px; right: 215px;"></canvas> 
-	<canvas id="36" class="slot" width="40" height="70" style="top: 370px; right: 257px;"></canvas> 
-	<canvas id="35" class="slot" width="40" height="70" style="top: 370px; right: 299px;"></canvas> 
-	<canvas id="34" class="slot" width="40" height="70" style="top: 370px; right: 341px;"></canvas> 
-	<canvas id="33" class="slot" width="40" height="70" style="top: 370px; right: 383px;"></canvas> 
-	<canvas id="32" class="slot" width="40" height="70" style="top: 370px; right: 425px;"></canvas> 
-	<canvas id="31" class="slot" width="40" height="70" style="top: 370px; right: 467px;"></canvas> 
-	<canvas id="30" class="slot" width="40" height="70" style="top: 370px; right: 509px;"></canvas> 
-	<canvas id="29" class="slot" width="40" height="70" style="top: 370px; right: 551px;"></canvas> 
-	<canvas id="28" class="slot" width="40" height="70" style="top: 370px; right: 593px;"></canvas> 
-	<canvas id="27" class="slot" width="40" height="70" style="top: 370px; right: 635px;"></canvas> 
-	<canvas id="26" class="slot" width="40" height="70" style="top: 370px; right: 677px;"></canvas> 
-	<canvas id="25" class="slot" width="40" height="70" style="top: 370px; right: 719px;"></canvas>
+	<canvas id="25" class="slot" width="40" height="70" style="top: 410px; right: 5px;"></canvas> 
+	<canvas id="26" class="slot" width="40" height="70" style="top: 410px; right: 47px;"></canvas> 
+	<canvas id="27" class="slot" width="40" height="70" style="top: 410px; right: 89px;"></canvas> 
+	<canvas id="28" class="slot" width="40" height="70" style="top: 410px; right: 131px;"></canvas> 
+	<canvas id="29" class="slot" width="40" height="70" style="top: 410px; right: 173px;"></canvas> 
+	<canvas id="30" class="slot" width="40" height="70" style="top: 410px; right: 215px;"></canvas> 
+	<canvas id="31" class="slot" width="40" height="70" style="top: 410px; right: 257px;"></canvas> 
+	<canvas id="32" class="slot" width="40" height="70" style="top: 410px; right: 299px;"></canvas>
+	 <canvas id="33" class="slot" width="40" height="70" style="top: 410px; right: 341px;"></canvas> 
+	 <canvas id="34" class="slot" width="40" height="70" style="top: 410px; right: 383px;"></canvas> 
+	 <canvas id="35" class="slot" width="40" height="70" style="top: 410px; right: 425px;"></canvas> 
+	 <canvas id="36" class="slot" width="40" height="70" style="top: 410px; right: 467px;"></canvas> 
+	 <canvas id="37" class="slot" width="40" height="70" style="top: 410px; right: 509px;"></canvas> 
+	 <canvas id="38" class="slot" width="40" height="70" style="top: 410px; right: 551px;"></canvas> 
+	 <canvas id="39" class="slot" width="40" height="70" style="top: 410px; right: 593px;"></canvas> 
+	 <canvas id="40" class="slot" width="40" height="70" style="top: 410px; right: 635px;"></canvas> 
+	 <canvas id="41" class="slot" width="40" height="70" style="top: 410px; right: 677px;"></canvas> 
+	 <canvas id="42" class="slot" width="40" height="70" style="top: 410px; right: 719px;"></canvas>
 
-
+	 <img src="../assets/wheelchair.png" width="38" height="38"
+	 	style="position: absolute; top: 430px; right: 636px;">
+	 <img src="../assets/wheelchair.png" width="38" height="38"
+	 	style="position: absolute; top: 430px; right: 678px;">
+	 <img src="../assets/wheelchair.png" width="38" height="38"
+	 	style="position: absolute; top: 430px; right: 720px;">
 	</div>
+	
 </template>
 
 <script>
+
+
 export default {
     name: 'parkingmap',
     data () {
@@ -123,11 +136,12 @@ export default {
 </script>
 
 <style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
 .main-container {
   border: 1px solid black;
   width: 850px;
-  height:448px;
+  height:488px;
   position:relative;
   background: lightgrey;
 }
@@ -149,8 +163,17 @@ export default {
   background: #5CBD4C;
 }
 
+.arrows {
+	position: absolute;
+	width: 80px;
+	top: 5px;
+	right: 383px;
+	height: 70px;
+}
+
 .occupied {
     background: #DF0000;
+
 }
 
 .fill {

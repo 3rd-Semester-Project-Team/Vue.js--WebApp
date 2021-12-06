@@ -1,16 +1,15 @@
 <template>
-<div class="container text-white weather bg-secondary">
-  <div class="d-flex flex-row w-100 justify-content-right">
-      <div class="col text-right">
-          <p>{{date()}}</p>
-           <p v-if="weather != null">{{weather.main.temp}} &#176;C {{weather.weather[0].main}}  </p>
-
+<!-- <div class="container text-white justify-content-right weather"> -->
+  <div class="d-flex flex-row w-100 justify-content-right weather text-white">
+      <div class="d-flex flex-column text-right bg-secondary justify-content-center weather-text">
+          <div>{{date()}}</div>
+           <div v-if="weather != null">{{weather.main.temp}} &#176;C <br> {{weather.weather[0].description}}  </div>
       </div>
-      <div class="col text-right">
+      <div class="col text-right icon">
           <img v-if="weather != null" v-bind:src="'https://openweathermap.org/img/w/' + weather.weather[0].icon + '.png'">
           </div>
   </div>
-</div>
+<!-- </div> -->
 </template>
 
 <script>
@@ -18,9 +17,7 @@ export default {
     name: 'weather',
     data () {
         return {
-            weather : null 
-
-            
+            weather : null             
         }
 
     },
@@ -50,7 +47,20 @@ export default {
 
 <style>
 .weather {
-    width: 300px;
+    width: fit-content;
     max-width: 300px;
+}
+
+.weather-text {
+  padding: 8px;
+}
+
+.icon {
+  max-width: 91px;
+}
+
+.icon img {
+  width: 90px;
+  height: 90px;
 }
 </style>
