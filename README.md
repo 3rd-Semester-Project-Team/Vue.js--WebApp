@@ -9,14 +9,13 @@ You have to run ```npm install``` command, in order to install the modules.
 
 
 ### Compiles and hot-reloads for development
-```
-npm run serve
-```
+
+In development mode, to run the application locally use ```npm run serve``` command.
 
 ### Compiles and minifies for production
-```
-npm run build
-```
+
+To build the application for deployment use ```npm run build```
 
 ### Customize configuration
+Vue.js documentation for the used version 3: [Vue v3 docs](https://v3.vuejs.org/guide/introduction.html) 
 See [Configuration Reference](https://cli.vuejs.org/config/).
