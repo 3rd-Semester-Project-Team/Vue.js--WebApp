@@ -1,4 +1,4 @@
-# parkingwebapp_vue
+# Zealand Parking Web Application
 
 ## Project setup
 
