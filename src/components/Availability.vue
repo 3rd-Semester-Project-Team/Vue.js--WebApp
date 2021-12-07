@@ -24,14 +24,15 @@ export default {
     },
     methods: {
         getAvailable: function (){
-            let count = 0;
-            for (let i = 0; i <= this.parkingSlots.length -1;i++){
-                if (this.parkingSlots[i].occupied == false){
-                    count++
-                }
-            }
-            console.log(count)
-            return count;
+            // let count = 0;
+            // for (let i = 0; i <= this.parkingSlots.length -1;i++){
+            //     if (this.parkingSlots[i].occupied == false){
+            //         count++
+            //     }
+            // }
+            // console.log(count)
+            // return count;
+            return 72 - this.getOccupied()
         },
         getOccupied: function () {
             let count = 0;
