@@ -18,4 +18,5 @@ To build the application for deployment use ```npm run build```
 
 ### Customize configuration
 Vue.js documentation for the used version 3: [Vue v3 docs](https://v3.vuejs.org/guide/introduction.html) 
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
