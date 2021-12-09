@@ -1,107 +1,24 @@
 <template>
-    <div class="main-container">	
-   
-   <div class="arrows">
-	   <i style="font-size: 2.5rem;" class="bi bi-arrow-down"></i>
-		   <i style="font-size: 2.5rem;"  class="bi bi-arrow-up"></i>
-	</div>
 
-    <!-- Top right -->
-		<canvas class="slot" id="1" width="40" height="70" style="top: 5px; right: 5px;"></canvas>
-    		<canvas class="slot" id="2" width="40" height="70" style="top: 5px; right: 47px;"></canvas>
-		<canvas class="slot" id="3" width="40" height="70" style="top: 5px; right: 89px;"></canvas>
-		<canvas class="slot" id="4" width="40" height="70" style="top: 5px; right: 131px;"></canvas>
-		<canvas class="slot" id="5" width="40" height="70" style="top: 5px; right: 173px;"></canvas>
-		<canvas class="slot" id="6" width="40" height="70" style="top: 5px; right: 215px;"></canvas>
-    		<canvas class="slot" id="7" width="40" height="70" style="top: 5px; right: 257px;"></canvas>
-		<canvas class="slot" id="8" width="40" height="70" style="top: 5px; right: 299px;"></canvas>
-		<canvas class="slot" id="9" width="40" height="70" style="top: 5px; right: 341px;"></canvas>
- 
-  <!-- Top left -->
-		<canvas class="slot" id="10" style="top: 5px; left: 89px;"></canvas>
-		<canvas class="slot" id="11" style="top: 5px; left: 131px;"></canvas>
-  		<canvas class="slot" id="12" style="top: 5px; left: 173px;"></canvas>
-  		<canvas class="slot" id="13" style="top: 5px; left: 215px;"></canvas>
-  		<canvas class="slot" id="14" style="top: 5px; left: 257px;"></canvas>
-  		<canvas class="slot" id="15" style="top: 5px; left: 299px;"></canvas>
-		<canvas class="slot" id="16" style="top: 5px; left: 341px;"></canvas>
-  
-  <!-- Middle 1 -->
-	<canvas id="72" class="slot" width="40" height="70" style="top: 156px; right: 5px;"></canvas> 
-	<canvas id="71" class="slot" width="40" height="70" style="top: 156px; right: 47px;"></canvas> 
-	<canvas id="70" class="slot" width="40" height="70" style="top: 156px; right: 89px;"></canvas> 
-	<canvas id="69" class="slot" width="40" height="70" style="top: 156px; right: 131px;"></canvas> 
-	<canvas id="68" class="slot" width="40" height="70" style="top: 156px; right: 173px;"></canvas> 
-	<canvas id="67" class="slot" width="40" height="70" style="top: 156px; right: 215px;"></canvas> 
-	<canvas id="66" class="slot" width="40" height="70" style="top: 156px; right: 257px;"></canvas> 
-	<canvas id="65" class="slot" width="40" height="70" style="top: 156px; right: 299px;"></canvas> 	
-	<canvas id="64" class="slot" width="40" height="70" style="top: 156px; right: 341px;"></canvas> 
-	<canvas id="63" class="slot" width="40" height="70" style="top: 156px; right: 383px;"></canvas> 
-	<canvas id="62" class="slot" width="40" height="70" style="top: 156px; right: 425px;"></canvas> 
-	<canvas id="61" class="slot" width="40" height="70" style="top: 156px; right: 467px;"></canvas> 
-	<canvas id="60" class="slot" width="40" height="70" style="top: 156px; right: 509px;"></canvas> 
-	<canvas id="59" class="slot" width="40" height="70" style="top: 156px; right: 551px;"></canvas> 
-	<canvas id="58" class="slot" width="40" height="70" style="top: 156px; right: 593px;"></canvas>
-
-  <!-- Middle 2 -->
-
-	<canvas id="43" class="slot" width="40" height="70" style="top: 228px; right: 5px;"></canvas> 
-	<canvas id="44" class="slot" width="40" height="70" style="top: 228px; right: 47px;"></canvas> 
-	<canvas id="45" class="slot" width="40" height="70" style="top: 228px; right: 89px;"></canvas> 
-	<canvas id="46" class="slot" width="40" height="70" style="top: 228px; right: 131px;"></canvas> 
-	<canvas id="47" class="slot" width="40" height="70" style="top: 228px; right: 173px;"></canvas> 
-	<canvas id="48" class="slot" width="40" height="70" style="top: 228px; right: 215px;"></canvas> 
-	<canvas id="49" class="slot" width="40" height="70" style="top: 228px; right: 257px;"></canvas> 
-	<canvas id="50" class="slot" width="40" height="70" style="top: 228px; right: 299px;"></canvas> 
-	<canvas id="51" class="slot" width="40" height="70" style="top: 228px; right: 341px;"></canvas> 
-	<canvas id="52" class="slot" width="40" height="70" style="top: 228px; right: 383px;"></canvas> 
-	<canvas id="53" class="slot" width="40" height="70" style="top: 228px; right: 425px;"></canvas> 
-	<canvas id="54" class="slot" width="40" height="70" style="top: 228px; right: 467px;"></canvas> 
-	<canvas id="55" class="slot" width="40" height="70" style="top: 228px; right: 509px;"></canvas> 
-	<canvas id="56" class="slot" width="40" height="70" style="top: 228px; right: 551px;"></canvas> 
-	<canvas id="57" class="slot" width="40" height="70" style="top: 228px; right: 593px;"></canvas> 
-    <!-- Left row -->
-  <canvas id="17" class="slot-h" style="top: 72px; left: 5px;"></canvas>
-  <canvas id="18" class="slot-h" style="top: 114px; left: 5px;"></canvas>
-  <canvas id="19" class="slot-h" style="top: 156px; left: 5px;"></canvas>
-  <canvas id="20" class="slot-h" style="top: 198px; left: 5px;"></canvas>
-  <canvas id="21" class="slot-h" style="top: 240px; left: 5px;"></canvas>
-  <canvas id="22" class="slot-h" style="top: 282px; left: 5px;"></canvas>
-  <canvas id="23" class="slot-h" style="top: 324px; left: 5px;"></canvas>
-  <canvas id="24" class="slot-h" style="top: 366px; left: 5px;"></canvas>
-  
-
-    <!-- Bottom row -->
-	<canvas id="25" class="slot" width="40" height="70" style="top: 410px; right: 5px;"></canvas> 
-	<canvas id="26" class="slot" width="40" height="70" style="top: 410px; right: 47px;"></canvas> 
-	<canvas id="27" class="slot" width="40" height="70" style="top: 410px; right: 89px;"></canvas> 
-	<canvas id="28" class="slot" width="40" height="70" style="top: 410px; right: 131px;"></canvas> 
-	<canvas id="29" class="slot" width="40" height="70" style="top: 410px; right: 173px;"></canvas> 
-	<canvas id="30" class="slot" width="40" height="70" style="top: 410px; right: 215px;"></canvas> 
-	<canvas id="31" class="slot" width="40" height="70" style="top: 410px; right: 257px;"></canvas> 
-	<canvas id="32" class="slot" width="40" height="70" style="top: 410px; right: 299px;"></canvas>
-	 <canvas id="33" class="slot" width="40" height="70" style="top: 410px; right: 341px;"></canvas> 
-	 <canvas id="34" class="slot" width="40" height="70" style="top: 410px; right: 383px;"></canvas> 
-	 <canvas id="35" class="slot" width="40" height="70" style="top: 410px; right: 425px;"></canvas> 
-	 <canvas id="36" class="slot" width="40" height="70" style="top: 410px; right: 467px;"></canvas> 
-	 <canvas id="37" class="slot" width="40" height="70" style="top: 410px; right: 509px;"></canvas> 
-	 <canvas id="38" class="slot" width="40" height="70" style="top: 410px; right: 551px;"></canvas> 
-	 <canvas id="39" class="slot" width="40" height="70" style="top: 410px; right: 593px;"></canvas> 
-	 <canvas id="40" class="slot" width="40" height="70" style="top: 410px; right: 635px;"></canvas> 
-	 <canvas id="41" class="slot" width="40" height="70" style="top: 410px; right: 677px;"></canvas> 
-	 <canvas id="42" class="slot" width="40" height="70" style="top: 410px; right: 719px;"></canvas>
-
-	 <img src="../assets/wheelchair.png" width="38" height="38"
-	 	style="position: absolute; top: 430px; right: 636px;">
-	 <img src="../assets/wheelchair.png" width="38" height="38"
-	 	style="position: absolute; top: 430px; right: 678px;">
-	 <img src="../assets/wheelchair.png" width="38" height="38"
-	 	style="position: absolute; top: 430px; right: 720px;">
-	</div>
+<div class="d-flex flex-row justify-content-center w-100">
+    <div class="col col-12 col-md-6 col-lg-8">
+      <div class="scaleable-wrapper" id="scaleable-wrapper">
+        <div class="map-container" id="map-container">
+          <div>
+	            <i style="font-size: 3.1rem; position: absolute; top: 1%; right:50%" class="bi bi-arrow-down arrows">
+              </i>
+		          <i style="font-size: 3.1rem; position: absolute; top: 1%; right:45% ;"  class="bi bi-arrow-up arrows">
+              </i>
+	        </div>
+		    </div>
+      </div>
+    </div>
+</div>
 	
 </template>
 
 <script>
+import { onMounted } from '@vue/runtime-core'
 
 
 export default {
@@ -114,10 +31,14 @@ export default {
     props: {
         parkingSlots: []
     },
-    methods: {
-        setToOccupied: function () {
-             for (let i = 0; i <= this.parkingSlots.length -1;i++){
-                if (this.parkingSlots[i].occupied == true){
+    methods: 
+	{
+        setToOccupied: function () 
+		{
+             for (let i = 0; i <= this.parkingSlots.length -1;i++)
+			 {
+                if (this.parkingSlots[i].occupied == true)
+				{
                     let slot = document.getElementById(this.parkingSlots[i].parkingId)
                     slot.style.backgroundColor = "#DF0000"
                 }
@@ -128,9 +49,187 @@ export default {
         this.$nextTick(
             this.setToOccupied()
         )
-    }
+    },
+	mounted(){
+		var $el = $("#map-container");
+var elHeight = $el.outerHeight();
+var elWidth = $el.outerWidth();
+
+var $wrapper = $("#scaleable-wrapper");
+
+$wrapper.resizable({
+  resize: doResize
+});
+
+function doResize(event, ui) {
+  
+  var scale, origin;
+    
+  scale = Math.min(
+    ui.size.width / elWidth,    
+    ui.size.height / elHeight
+  );
+  
+  $el.css({
+    transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
+  });
+  
+}
+
+var starterData = { 
+  size: {
+    width: $wrapper.width(),
+    height: $wrapper.height()
+  }
+}
+doResize(null, starterData);
+
+
+// added code for parking slots
+
+var createTopRight = function () {
+
+	console.log(document.getElementById("scaleable-wrapper"))
+  var main = document.getElementById("map-container")
+  console.log(main)
+  var distH = 0.8;
+
+  for (let i = 0; i <= 8; i++){
+    var slot = document.createElement('div')
+    slot.style.width = '4%'
+    slot.style.height = '14%'
+    slot.style.background = '#5CBD4C'
+	  slot.setAttribute("id",i+1)
+  
+    slot.style.position = 'absolute'
+    slot.style.top = '1%'
+    slot.style.right = distH + i*distH + (i*4) + '%'
+    main.append(slot);
+  }
+}
+
+var createTopLeft = function () {
+
+	console.log(document.getElementById("scaleable-wrapper"))
+	//var main =onMounted(document.getElementById("map-container"))
+  var main = document.getElementById("map-container")
+  console.log(main)
+  var distH = 0.8;
+
+  for (let i = 0; i <= 6; i++){
+    var slot = document.createElement('div')
+    slot.style.width = '4%'
+    slot.style.height = '14%'
+    slot.style.background = '#5CBD4C'
+	slot.setAttribute("id",i+10)
+  
+    slot.style.position = 'absolute'
+    slot.style.top = '1%'
+    slot.style.right = 57.6 + i*distH + (i*4) + '%'
+    main.append(slot);
+  }
+}
+
+let createMiddleTop = function () {
+  let main = document.getElementById('map-container')
+  let distH = 0.8;
+
+  for (let i = 0; i <= 14; i++){
+    let slot = document.createElement('div')
+    slot.style.width = '4%'
+    slot.style.height = '14%'
+    slot.style.background = '#5CBD4C'
+	slot.setAttribute("id",i+17)
+  
+    slot.style.position = 'absolute'
+    slot.style.top = '34%'
+    slot.style.right = distH + i*distH + (i*4) + '%'
+    main.append(slot);
+  }
+}
+let createMiddleBottom = function () {
+  let main = document.getElementById('map-container')
+  let distH = 0.8;
+
+  for (let i = 0; i <= 14; i++){
+    let slot = document.createElement('div')
+    slot.style.width = '4%'
+    slot.style.height = '14%'
+    slot.style.background = '#5CBD4C'
+	slot.setAttribute("id",i+32)
+  
+    slot.style.position = 'absolute'
+    slot.style.top = '51%'
+    slot.style.right = distH + i*distH + (i*4) + '%'
+    main.append(slot);
+  }
+}
+let createBottom = function () {
+  let main = document.getElementById('map-container')
+  let distH = 0.8;
+
+  for (let i = 0; i <= 17; i++){
+    let slot = document.createElement('div')
+
+
+	let special=document.createElement('img')
+	special.style.width='80%'
+	special.style.height='45%'
+	special.style.position='absolute'
+	special.style.top='30%'
+	special.style.left='10%'
+	special.src='wheelchair.png'
+	if(i==15 || i==16 || i==17){
+		slot.append(special)
+	}
+
+    slot.style.width = '4%'
+    slot.style.height = '14%'
+    slot.style.background = '#5CBD4C'
+	slot.setAttribute("id",i+47)
+  
+    slot.style.position = 'absolute'
+    slot.style.top = '85%'
+    slot.style.right = distH + i*distH + (i*4) + '%'
+    main.append(slot);
+  }
+}
+
+let createLeft = function () {
+  let main = document.getElementById('map-container')
+  let distV = 1.5;
+
+  for (let i = 0; i <= 7; i++){
+    let slot = document.createElement('div')
+
+    slot.style.width = '7.8%'
+    slot.style.height = '7.8%'
+    slot.style.background = '#5CBD4C'
+	slot.setAttribute("id",i+65)
+  
+    slot.style.position = 'absolute'
+    slot.style.top = 16 + i*distV + (i*7.8) + '%'
+    slot.style.left = '1%'
+    main.append(slot);
+  }
+}
+
+let drawParkingSlots = function () {
+  createTopLeft()
+  createTopRight()
+  createMiddleTop()
+  createMiddleBottom()
+  createBottom()
+  createLeft()
+}
+
+drawParkingSlots()
+
+	}
+	
     
 }
+
 
 
 </script>
@@ -138,38 +237,26 @@ export default {
 <style>
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
-.main-container {
-  border: 1px solid black;
-  width: 850px;
-  height:488px;
-  position:relative;
-  background: lightgrey;
-}
-.slot {
-  position: absolute;
-  box-sizing: border-box;
-  width: 40px;
-  height: 70px;
-  border:0.1px solid;
-  background: #5CBD4C;
-}
-
-.slot-h {
-  position: absolute;
-  box-sizing: border-box;
-  width: 70px;
-  height: 40px;
-  border:0.1px solid;
-  background: #5CBD4C;
-}
-
-.arrows {
-	position: absolute;
-	width: 80px;
-	top: 5px;
-	right: 383px;
-	height: 70px;
-}
+.map-container {
+    width: 950px;
+    height: 488px;
+    padding: 50px;
+    text-align: center;
+    background: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+  }
+  
+  .scaleable-wrapper {
+    padding: 10px;
+    resize: both;
+    position: relative;
+    background: #f0f0f0;
+    height: 400px;
+  }
 
 .occupied {
     background: #DF0000;
