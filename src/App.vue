@@ -39,7 +39,7 @@ export default {
     return {
     //dataList: [1,2,3], // fake data for the example
     parkingSlots: [],
-    apiUrl: 'http://localhost:41911/api/Parkings'
+    apiUrl: 'http://parkingsensor-api.azurewebsites.net/api/Parkings'
     }
   },
   methods: {
