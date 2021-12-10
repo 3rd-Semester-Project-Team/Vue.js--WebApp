@@ -1,7 +1,7 @@
 <template>
 
 <div class="d-flex flex-row justify-content-center w-100">
-    <div class="col col-12 col-md-6 col-lg-8">
+    <div class="col-12 col-md-6 col-lg-8">
       <div class="scaleable-wrapper" id="scaleable-wrapper">
         <div class="map-container" id="map-container">
           <div>
