@@ -40,7 +40,8 @@ export default {
                 if (this.parkingSlots[i].occupied == true)
 				{
                     let slot = document.getElementById(this.parkingSlots[i].parkingId)
-                    slot.style.backgroundColor = "#DF0000"
+                    //slot.style.backgroundColor = "#DF0000"
+                    slot.setAttribute("class", "occupied")
                 }
             }
         }
@@ -100,6 +101,7 @@ var createTopRight = function () {
     slot.style.height = '14%'
     slot.style.background = '#5CBD4C'
 	  slot.setAttribute("id",i+1)
+    slot.setAttribute("class", "")
   
     slot.style.position = 'absolute'
     slot.style.top = '1%'
@@ -259,7 +261,7 @@ drawParkingSlots()
   }
 
 .occupied {
-    background: #DF0000;
+    background: #DF0000 !important;
 
 }
 
